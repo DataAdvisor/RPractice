@@ -1,4 +1,4 @@
-﻿Gender,Type of School,How much do you like schooling in general,English test,Math test,Science test
+﻿Gender,Type_of_School,School_Like,English_Test,Math_Test,Science_Test
 male,private,neutral,65,88,76
 female,private,much,67,87,78
 male,private,neutral,76,83,76

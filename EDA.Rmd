@@ -8,6 +8,7 @@ output:
 library(tidyverse)
 library(explore)
 library(DataExplorer)
+library(SmartEDA)
 ```
 
 
