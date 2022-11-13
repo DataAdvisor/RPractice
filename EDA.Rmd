@@ -1,0 +1,76 @@
+---
+title: "Descriptive Statistics"
+output:
+  html_document:
+    df_print: paged
+---
+```{r}
+library(tidyverse)
+library(explore)
+library(DataExplorer)
+```
+
+
+```{r}
+data <- read_csv("descriptive statistics.csv")
+data
+```
+
+```{r}
+glimpse(data)
+```
+
+
+```{r}
+summary(data)
+```
+
+```{r}
+plot(data)
+```
+
+
+```{r}
+hist(data$`English test`)
+hist(data$`Math test`)
+hist(data$`Science test`)
+
+```
+
+```{r}
+data %>%
+  #select(-'How much do you like schooling in general')%>%
+  explore()
+```
+
+```{r}
+describe_all(data)
+```
+
+```{r}
+data %>%
+  #describe_cat(Gender)
+  #describe_cat('Type of School')
+  describe_cat('How much do you like schooling in general')
+```
+
+
+#DATA EXPLORER
+
+```{r}
+data %>%
+    create_report(
+        output_file  = "descriptive_report",
+        output_dir   = "C:/Users/User/Desktop/AMA MABALACAT 22-23/QUANTITATIVE METHODS-20220911T045704Z-001/week 10/EDA/RPractice",
+        y            = "Gender",
+        report_title = "EDA Report - GSS Demographic Survey"
+    )
+```
+
+
+```{r}
+data %>% introduce()
+
+data %>% plot_intro()
+```
+
