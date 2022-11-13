@@ -75,3 +75,9 @@ data %>% introduce()
 data %>% plot_intro()
 ```
 
+#SMART EDA
+
+```{r}
+ExpReport(data, op_file = "smarteda")
+```
+
