@@ -1,6 +1,7 @@
 ---
 title: "Descriptive Statistics"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -32,9 +33,9 @@ plot(data)
 
 
 ```{r}
-hist(data$`English test`)
-hist(data$`Math test`)
-hist(data$`Science test`)
+hist(data$`English_Test`)
+hist(data$`Math_Test`)
+hist(data$`Science_Test`)
 
 ```
 
